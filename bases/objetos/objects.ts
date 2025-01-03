@@ -1,6 +1,6 @@
 (() => {
 
-    let flash: { name: string, age?: number, powers: string[] } = {
+    let flash: { name: string, age?: number, powers: string[],  getName?: () => string } = {
         name: 'Barry Allen',
         age: 24,
         powers: ['Velocidad', 'Viajar en el tiempo'],
@@ -10,11 +10,11 @@
         name: 'Clark kent',
         // age: 28,
         powers: ['Super fuerza'],
-        // getNombre() {
-        //     return this.name;
-        // }
+        getName() {
+            return this.name;
+        }
     }    
 
-    console.log(flash);
+    console.log( flash.getName() );
 
 })()
