@@ -29,6 +29,6 @@
     const avengersArr: [string, boolean, number] = ['Cap. America', true, 150.33];
 
     const [ capitan, ironman, seriaUnNumero ] = avengersArr;
-    console.log({ ironman, capitan });
+    // console.log({ ironman, capitan });
 
 })()
