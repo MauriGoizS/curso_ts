@@ -1,5 +1,29 @@
 "use strict";
 (() => {
+    class Mutante {
+        constructor(name, realName) {
+            this.name = name;
+            this.realName = realName;
+        }
+    }
+    class Xmen extends Mutante {
+        salvarMundo() {
+            return 'Mundo a salvo';
+        }
+    }
+    class Villian extends Mutante {
+        conquistarMundo() {
+            return 'Mundo conquistado';
+        }
+    }
+    const wolverine = new Xmen('Wolverine', 'Logan');
+    const magneto = new Villian('Magneto', 'Magnus');
+    const printName = (character) => {
+        console.log(character.realName);
+    };
+    printName(magneto);
+})();
+(() => {
     class Avenger {
         static getAvAge() {
             return this.name;
@@ -21,7 +45,6 @@
         constructor(name, realname) {
             this.name = name;
             this.realname = realname;
-            console.log('Constructor Avenger llamado');
         }
         getFullName() {
             return `${this.name} ${this.realname}`;
@@ -31,7 +54,6 @@
         constructor(name, realName, isMutant) {
             super(name, realName);
             this.isMutant = isMutant;
-            console.log('Constructor Xmen llamdo');
         }
         get fullName() {
             return `${this.name} - ${this.realname}`;
@@ -43,12 +65,8 @@
             this.name = name;
         }
         getFullNameDesdeXmen() {
-            console.log(super.getFullName());
         }
     }
     const wolverine = new Xmen('Wolverine', 'Logan', true);
-    console.log(wolverine.fullName);
-    wolverine.fullName = 'Ma';
-    console.log(wolverine.fullName);
 })();
 //# sourceMappingURL=main.js.map
