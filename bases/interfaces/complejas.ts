@@ -4,6 +4,7 @@
         name: string;
         age?: number;
         address: Address;
+        getFullAddress( id: string ): string;
     }
 
     interface Address {
@@ -19,6 +20,9 @@
             id: 125,
             zip: 'KY2 SUD',
             city: 'Otawa'
+        },
+        getFullAddress( id: string ) {
+            return 'Hola';
         }
     }
 
@@ -29,6 +33,9 @@
             city: 'Toronto',
             zip: 'K2S U2',
             id: 120
+        },
+        getFullAddress( id: string ) {
+            return 'Hola';
         }
     }
 
