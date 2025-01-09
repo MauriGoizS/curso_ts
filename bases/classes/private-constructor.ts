@@ -29,6 +29,6 @@
     apocalipsis1.changeName('Xavier');
 
     // const apocalipsis = new Apocalipsis('Soy Apocalipsis...');
-    console.log(apocalipsis1, apocalipsis2, apocalipsis3);
+    // console.log(apocalipsis1, apocalipsis2, apocalipsis3);
 
 })()
