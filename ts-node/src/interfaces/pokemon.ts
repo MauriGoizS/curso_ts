@@ -1,3 +1,5 @@
+// Paste JSON as Code
+
 export interface Pokemon {
     abilities:                Ability[];
     base_experience:          number;
