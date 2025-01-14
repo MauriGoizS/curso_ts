@@ -1,7 +1,7 @@
-import { getPokemon } from "./generics.ts/get-pokemos";
+import { getPokemon } from "./generics.ts/get-pokemon";
 
 
 getPokemon( 4 )
-    .then( resp => console.log( resp ) )
+    .then( pokemon => console.log( pokemon.sprites.front_default ) )
     .catch( error => console.error( error ) )
     .finally( () => console.log('Fin de getPokemon'))
