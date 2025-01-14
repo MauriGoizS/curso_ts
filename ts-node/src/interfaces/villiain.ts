@@ -1,4 +1,4 @@
-export interface villain {
+export interface Villain {
     name: string;
     dangerLevel: number;
 }
